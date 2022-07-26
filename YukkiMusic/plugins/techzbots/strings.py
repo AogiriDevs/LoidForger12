@@ -14,7 +14,7 @@ COMMANDS_TEXT = f"""
 """
 
 START_BUTTON_GROUP = "ok"
-)
+
 
 START_BUTTON_PRIVATE = "ok"
 
