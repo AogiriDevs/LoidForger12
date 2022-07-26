@@ -6,59 +6,17 @@ BOT_USERNAME = app.username
 START_TEXT = f"""
 ✨ **Hello MENTION !**
 
-**You can use [{BOT_NAME}](https://t.me/{BOT_USERNAME}) to play Music or Videos in your Group Video Chat.**
-
-💡 **Find out all the Bot's commands and how they work by clicking on the ➤ 📚 Commands button**
 """
 
 COMMANDS_TEXT = f"""
 ✨ **Hello MENTION !**
 
-**Click on the buttons below to know my commands.**
 """
 
-START_BUTTON_GROUP = InlineKeyboardMarkup(
-    [   
-        [
-            InlineKeyboardButton(
-                text="📚 Commands", callback_data="command_menu"
-            ),
-            InlineKeyboardButton(
-                text="🔧 Settings", callback_data="settings_helper"
-            ),                                   
-        ],
-        [
-            InlineKeyboardButton(
-                text="📣 Anime Channel", url="https://t.me/Anime_Cruise"
-            ),
-            InlineKeyboardButton(
-                text="📣 The Kaizuryu", url="https://t.me/TheKaizuryu"
-            ),                       
-        ],        
-    ]
+START_BUTTON_GROUP = "ok"
 )
 
-START_BUTTON_PRIVATE = InlineKeyboardMarkup(
-    [   [
-            InlineKeyboardButton(
-                text="➕ Add me to Group ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"
-            ),            
-        ],
-        [   
-            InlineKeyboardButton(
-                text="📚 Commands", callback_data="command_menu"
-            ),                       
-        ],
-        [
-            InlineKeyboardButton(
-                text="📣 Anime Channel", url="https://t.me/Anime_Cruise"
-            ),
-            InlineKeyboardButton(
-                text="📣 The Kaizuryu", url="https://t.me/TheKaizuryu"
-            ),                        
-        ],        
-    ]
-)
+START_BUTTON_PRIVATE = "ok"
 
 COMMANDS_BUTTON_USER = InlineKeyboardMarkup(
     [   [
